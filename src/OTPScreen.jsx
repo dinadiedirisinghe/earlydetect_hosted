@@ -65,6 +65,7 @@ export default function OTPScreen({ onNext, totalSteps }) {
       setOtp(["", "", "", "", "", ""]);
       setServerError("");
     } catch (err) {
+      console.log("error:" +err);
       setServerError("Could not reach the server. Make sure it is running.");
     } finally {
       setSending(false);
