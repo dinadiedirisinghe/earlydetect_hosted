@@ -233,7 +233,7 @@ max 3 screeningRecommendations, max 3 keyFindings, max 3 positiveFindings.
 
     try {
       const response = await fetch(
-        "http://localhost:3001/api/analyse-combined",
+        "/api/analyse-combined",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -127,7 +127,7 @@ If a value is not clearly readable, omit it. Do not interpret — only extract.
               },
             };
 
-      const response = await fetch("http://localhost:3001/api/analyse", {
+      const response = await fetch("/api/analyse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -171,7 +171,7 @@ export default function App() {
   const saveToDb = async (endpoint, data) => {
     if (!userId) return; // not logged in yet
     try {
-      await fetch(`http://localhost:3001${endpoint}`, {
+      await fetch(`${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId, ...data }),
